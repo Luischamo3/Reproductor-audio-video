@@ -1,0 +1,204 @@
+html {
+    font-size: 80%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+* {
+    box-sizing: border-box;
+   
+           
+}
+body {
+    margin: 0;
+    height: 100vh;
+    display:flex;
+    flex-flow: row wrap;
+    background: rgba(189,189,189,1);
+    background: -moz-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(186,186,186,1) 11%, rgba(181,181,181,1) 28%, rgba(173,173,173,1) 60%, rgba(204,204,204,1) 82%, rgba(212,212,212,1) 88%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(189,189,189,1)), color-stop(11%, rgba(186,186,186,1)), color-stop(28%, rgba(181,181,181,1)), color-stop(60%, rgba(173,173,173,1)), color-stop(82%, rgba(204,204,204,1)), color-stop(88%, rgba(212,212,212,1)));
+    background: -webkit-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(186,186,186,1) 11%, rgba(181,181,181,1) 28%, rgba(173,173,173,1) 60%, rgba(204,204,204,1) 82%, rgba(212,212,212,1) 88%);
+    background: -o-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(186,186,186,1) 11%, rgba(181,181,181,1) 28%, rgba(173,173,173,1) 60%, rgba(204,204,204,1) 82%, rgba(212,212,212,1) 88%);
+    background: -ms-linear-gradient(left, rgba(189,189,189,1) 0%, rgba(186,186,186,1) 11%, rgba(181,181,181,1) 28%, rgba(173,173,173,1) 60%, rgba(204,204,204,1) 82%, rgba(212,212,212,1) 88%);
+    background: linear-gradient(to right, rgba(189,189,189,1) 0%, rgba(186,186,186,1) 11%, rgba(181,181,181,1) 28%, rgba(173,173,173,1) 60%, rgba(204,204,204,1) 82%, rgba(212,212,212,1) 88%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdbdbd', endColorstr='#d4d4d4', GradientType=1 );
+}
+.header{
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+.header-izq > svg {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+.header-izq{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: middle;
+    align-items: center;
+}
+.header-der > svg {
+ 
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}.header-der > svg:hover {
+ 
+    color: red;
+}
+.header-der {
+    width: 10%;
+    height: 100%;
+    /* border: 1px solid green;   */
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;  
+}
+
+.main {
+    height: 80%;
+   
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main-izq{
+    width: 75%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+.main-der{
+    width: 25%;
+   border: 1px solid teal;
+   
+    display: flex;
+    flex-wrap: wrap;
+}
+.titulolista{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(87, 228, 228);
+   
+}
+.titulolista > h2 {
+    text-align: center;
+}
+.contenedorcanciones {
+    width: 100%;
+    height: 90%;
+   background-color: rgb(86, 219, 219);
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center; 
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    
+}
+.cancion {
+    width: 80%;
+    height: 15%;
+  
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.cancion:hover {
+    background-color: rgba(0, 0,0, 0.5);
+}
+.cancion-titulo {
+    width: 80%;
+text-align: center;
+}
+.cancion-icono {
+    width: 20%;
+}
+.reproductor{
+    width: 80%;
+    height: 70%;
+    
+    margin-top: 20px;
+}
+
+.reproductor > video {
+    width: 100%;
+    height: 100%;
+}
+.controles {
+    width: 80%;
+    height: 10%;
+    /* border: 1px solid teal; */
+   
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+}
+.controles > svg , #slider{
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+.controles > svg:hover{
+    color: red;
+    transform: scale(1.1);
+}
+.footer {
+    height: 10%;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    /* align-items: center; */
+}
+.footer > img {
+   margin-left: -800px;
+   
+    width: 20%;
+    height: 90%;
+}
+
+#main {
+	width: 10%;
+	height: 20%;
+	/* margin: 100px auto 0; */
+	display: flex;
+}
+
+
+
+.playing{
+    background-color:teal;
+}
+
+ 
+ @media screen and (max-width: 600px) {
+
+    .main-izq{
+        width: 100%;
+    }
+    .main-der{
+        width: 100%;
+    }
+   
+} 
+
+@media screen and (max-width: 800px) {
+   
+}

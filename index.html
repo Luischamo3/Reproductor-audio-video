@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reproductor Audio Video</title>
+    <link rel="stylesheet" href="css/Glyphter.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="header-izq">
+            <i class="fas fa-music"></i>
+            <span>Luisify</span>
+        </div>
+        <div class="header-der">
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+    <div class="main">
+        <div class="main-izq">
+            <div class="reproductor">
+                <video id="audio">
+                    <!-- <source id="source" /> -->
+                </video>
+            </div>
+            <div class="controles">
+                <div class="progressTime">
+                    <span id="current"></span>
+                    :
+                    <span id="duration"></span>
+                </div>
+                <i class="fas fa-step-backward" id="prev"></i>
+                <i class="fas fa-fast-backward" id="prevsecond"></i>
+                <i class="fas fa-play" id="play"></i>
+                <i class="fas fa-pause" id="pause"></i>
+                <i class="fas fa-fast-forward" id="nextsecond"></i>
+                <i class="fas fa-step-forward" id="next"></i>
+                <i class="fas fa-plus" id="volumup"></i>
+                <i class="fas fa-minus" id="volumdown"></i>
+
+                <div class="progressBar">
+                    <div class="timeBar"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="main-der">
+
+            <div class="titulolista">
+                <h2>Lista de reproducción</h2>
+            </div>
+            <div class="contenedorcanciones">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="creative.png" alt="">
+        <p>Copiright 2018 - Luis José Sanfiel Orsini</p>
+    </div>
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+   
+    <script src="app.js"></script>
+</body>
+
+</html>
